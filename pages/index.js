@@ -64,7 +64,7 @@ export default function Home() {
           {computed}
         </ButtonDisplay>
 
-        <EmojiSelector addValue={addValue} emojis={smiles} title="Smiles" />
+        <EmojiSelector addValue={addValue} emojis={smiles} title="People" />
         <EmojiSelector addValue={addValue} emojis={generic} title="Generic" />
         <EmojiSelector addValue={addValue} emojis={hands} title="Hands" />
 
