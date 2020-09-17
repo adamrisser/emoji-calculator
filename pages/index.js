@@ -52,7 +52,7 @@ export default function Home() {
         </ButtonDisplay>
 
         <ButtonDisplay onClick={() => addValue('\u{200D}')} buttonText="+">
-          {display.map((d) => '\\u' + emojiUnicode(d)).join('  ')}
+          {display.map((d) => '\\u' + emojiUnicode(d)).join('')}
         </ButtonDisplay>
 
         <ButtonDisplay
@@ -64,21 +64,24 @@ export default function Home() {
           {computed}
         </ButtonDisplay>
 
+        <EmojiSelector addValue={addValue} emojis={smiles} title="Smiles" />
+
         <EmojiSelector
           addValue={addValue}
           emojis={fitzpatrickScale}
           title="Skin tones"
         />
-        <EmojiSelector addValue={addValue} emojis={smiles} title="Smiles" />
+
+        <EmojiSelector addValue={addValue} emojis={food} title="Food" />
+
         <EmojiSelector
           addValue={addValue}
           emojis={activities}
           title="Activities"
         />
-        <EmojiSelector addValue={addValue} emojis={objects} title="Objects" />
-        <EmojiSelector addValue={addValue} emojis={food} title="Food" />
         <EmojiSelector addValue={addValue} emojis={animals} title="Animals" />
         <EmojiSelector addValue={addValue} emojis={symbols} title="Symbols" />
+        <EmojiSelector addValue={addValue} emojis={objects} title="Objects" />
         <EmojiSelector addValue={addValue} emojis={travel} title="Travel" />
       </div>
     </main>

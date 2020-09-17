@@ -107,6 +107,7 @@ export const food = [
   // '🍽',
   // '🍴',
   // '🥄',
+  '🌾',
 ];
 
 export const travel = [
@@ -1152,6 +1153,7 @@ export const objects = [
   // '🚽',
   // '🚿',
   // '🛁',
+  '🏳️',
 ];
 
 export const animals = [
@@ -1265,7 +1267,6 @@ export const animals = [
   // '🌳',
   // '🌴',
   // '🌵',
-  '🌾',
   // '🌿',
   // '☘',
   // '🍀',
