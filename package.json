@@ -8,8 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "emoji-unicode": "^2.0.1",
     "next": "9.3.5",
+    "postcss-preset-env": "^6.7.0",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "styled-components": "^5.2.0",
+    "tailwindcss": "^1.8.10"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.11.1"
   }
 }
