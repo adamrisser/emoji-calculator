@@ -1,1 +1,3 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+A simple application to demonstrate how emojis can combine into new emojis
+
+Demo here: https://emoji-calculator.vercel.app/
