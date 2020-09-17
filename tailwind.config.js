@@ -20,6 +20,10 @@ module.exports = {
       '6xl': '4rem',
       '8xl': '6rem',
     },
+
+    maxWidth: {
+      '2xl': '37rem',
+    },
   },
   variants: {},
   plugins: [],

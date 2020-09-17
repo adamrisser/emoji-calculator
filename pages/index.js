@@ -11,16 +11,16 @@ import {
   travel,
   food,
   fitzpatrickScale,
+  hands,
+  generic,
+  hair,
 } from '../emojis';
 import ButtonDisplay from '../components/ButtonDisplay';
 
 export default function Home() {
   const [display, setDisplay] = useState([]);
   const [computed, setComputed] = useState([]);
-  const addValue = (v) => {
-    console.log;
-    setDisplay([...display, v]);
-  };
+  const addValue = (v) => setDisplay([...display, v]);
 
   return (
     <main>
@@ -28,7 +28,7 @@ export default function Home() {
         <title>Em🧐ji Calculator</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="container max-w-xl mx-auto">
+      <div className="container max-w-2xl mx-auto">
         <h1 className="text-4xl text-center pb-8 text-white">
           Em🧐ji Calculator
         </h1>
@@ -65,6 +65,8 @@ export default function Home() {
         </ButtonDisplay>
 
         <EmojiSelector addValue={addValue} emojis={smiles} title="Smiles" />
+        <EmojiSelector addValue={addValue} emojis={generic} title="Generic" />
+        <EmojiSelector addValue={addValue} emojis={hands} title="Hands" />
 
         <EmojiSelector
           addValue={addValue}
@@ -72,16 +74,18 @@ export default function Home() {
           title="Skin tones"
         />
 
-        <EmojiSelector addValue={addValue} emojis={food} title="Food" />
+        <EmojiSelector addValue={addValue} emojis={hair} title="Hair" />
 
+        <EmojiSelector addValue={addValue} emojis={animals} title="Animals" />
+
+        <EmojiSelector addValue={addValue} emojis={objects} title="Objects" />
+        <EmojiSelector addValue={addValue} emojis={food} title="Food" />
+        <EmojiSelector addValue={addValue} emojis={symbols} title="Symbols" />
         <EmojiSelector
           addValue={addValue}
           emojis={activities}
           title="Activities"
         />
-        <EmojiSelector addValue={addValue} emojis={animals} title="Animals" />
-        <EmojiSelector addValue={addValue} emojis={symbols} title="Symbols" />
-        <EmojiSelector addValue={addValue} emojis={objects} title="Objects" />
         <EmojiSelector addValue={addValue} emojis={travel} title="Travel" />
       </div>
     </main>
