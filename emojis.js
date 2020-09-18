@@ -552,7 +552,7 @@ export const hands = [
   // '✍',
 ];
 
-export const generic = ['👱'];
+export const generic = ['👱', '👮'];
 
 export const smiles = [
   // '😀',
@@ -743,7 +743,7 @@ export const smiles = [
   // '👩‍🚀',
   // '👨‍🚒',
   // '👩‍🚒',
-  '👮',
+  // '👮',
   // '👮‍♂️',
   // '👮‍♀️',
   // '🕵',
