@@ -39,6 +39,7 @@ export default function Home() {
             setComputed('');
           }}
           buttonText="🔄"
+          id="display"
         >
           {display.map((d, i) =>
             d === '\u200D' ? (
@@ -57,9 +58,10 @@ export default function Home() {
 
         <ButtonDisplay
           height="h-40"
-          textSize="text-8xl"
+          textSize="text-6xl"
           onClick={() => setComputed(display.join(''))}
           buttonText="↩"
+          id="sum"
         >
           {computed}
         </ButtonDisplay>
