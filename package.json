@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "cypress": "^6.1.0",
     "emoji-unicode": "^2.0.1",
     "next": "9.3.5",
     "postcss-preset-env": "^6.7.0",
@@ -17,6 +18,8 @@
     "tailwindcss": "^1.8.10"
   },
   "devDependencies": {
+    "@percy/agent": "^0.28.5",
+    "@percy/cypress": "^2.3.3",
     "babel-plugin-styled-components": "^1.11.1"
   }
 }
